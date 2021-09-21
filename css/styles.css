@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    background:    blur(1px);
+}
+
+.landing_home {
+    height: 100vh;
+    background-image: url(../images/Background-LP.svg);
+    background-size: 100% 110%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.estandares {
+    background: #EAC0D6;
+}
