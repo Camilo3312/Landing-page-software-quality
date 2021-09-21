@@ -12,7 +12,35 @@ body {
 header {
     width: 100vw;
     position: fixed;
-    background:    blur(1px);
+    background: #493d4385;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 20px; 
+    text-decoration: none;
+    font-weight: bolder;
+    color: #FFFF;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0 20px; 
+}
+
+header nav ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+
+header nav ul li a {
+    color: #FFFF;
+    text-decoration: none;
 }
 
 .landing_home {
@@ -30,6 +58,44 @@ header {
     display: flex;
     flex-direction: column; 
     justify-content: center;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.title a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background: #db7faf;
+    border: 1px solid #db7faf;
+    color: #FFFF;
+    border-radius: 50px;
+
+    transition: ease 500ms;
+}
+
+.title a:hover {
+    background: transparent;
+    border: 1px solid #db7faf;
+    color: #db7faf;
+}
+
+.img img{
+    animation: move infinite 10s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .estandares {
