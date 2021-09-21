@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 * {
     margin: 0;
     padding: 0;
+    --background: #ffffff;
+    --fondo: #0051ff;
+    --color_subtitulos: #001238;
+    --color_parrafos: #2e2e2e; 
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 header {
@@ -44,6 +50,7 @@ header nav ul li a {
 }
 
 .landing_home {
+    background: var(--background);
     height: 100vh;
     background-image: url(../images/Background-LP.svg);
     background-size: 100% 110%;
@@ -54,36 +61,42 @@ header nav ul li a {
 }
 
 .title {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    max-width: 500px;
+}
+
+.title p {
+    color: var(--color_parrafos);
+    margin: 30px 0;
 }
 
 .title h1 {
-    font-size: 40px;
+    font-size: 3em;
     font-weight: 700;
+    color: var(--color_subtitulos);
+    margin: 15px 0;
 }
 
 .title a {
+    width: auto;
     padding: 10px 20px;
     text-decoration: none;
-    background: #db7faf;
-    border: 1px solid #db7faf;
+    background: var(--fondo);
+    border: 1px solid var(--fondo);
     color: #FFFF;
     border-radius: 50px;
+    font-size: 20px;
 
     transition: ease 500ms;
 }
 
 .title a:hover {
     background: transparent;
-    border: 1px solid #db7faf;
-    color: #db7faf;
+    border: 1px solid var(--fondo);
+    color: var(--fondo);
 }
 
 .img img{
-    animation: move infinite 10s;
+    animation: move infinite 5s;
 }
 
 @keyframes move {
@@ -91,7 +104,7 @@ header nav ul li a {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
     100% {
         transform: translateY(0px);
@@ -99,5 +112,6 @@ header nav ul li a {
 }
 
 .estandares {
-    background: #EAC0D6;
+    background: var(--fondo);
+    color: #FFFF;
 }
