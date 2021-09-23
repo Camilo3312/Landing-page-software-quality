@@ -1,3 +1,14 @@
+$(document).ready(function(){
+
+    $('.btn_normas').click(function(){
+        var pos = $('.iso').position();
+        console.log(pos.top)
+		$('body, html').animate({
+			scrollTop: pos.top - 85
+		}, 300);
+	});
+});
+
 // let btn_normas = document.querySelector('.btn_normas');
 // let estandares = document.querySelector('.estandares');
 
@@ -11,7 +22,7 @@
 //     });
 // });
 
-let normas = document.querySelector('.normas');
+// let normas = document.querySelector('.normas');
 // const pos = document.documentElement.getBoundingClientRect();
 // const pos_normas = normas.getBoundingClientRect();
 

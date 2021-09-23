@@ -116,10 +116,10 @@ header nav ul li a {
 @keyframes iso {
     0% {
         transform: translateY(0px);
+
     }
     50% {
         transform: translateY(50px);
-      
     }
     100% {
         transform: translateY(0px);
@@ -189,24 +189,37 @@ header nav ul li a {
 
 .informacion {
     max-width: 1400px;
-    height: 100vh;
     margin: auto;
     padding: 6em 0;
+
+    display: flex;
 }
 
 .info_normas {
-    width: 70%;
-    float: left;
+    max-width: 70%;
+    padding: 0 50px 0 0;
 }
 
 .normas {
-    position: sticky;
-    top: 0;
-    width: 30%;
-    height: 400px;
-    float: right;
+    padding: 0 0 0 50px;
+    border-left: 5px solid #00123842;
+}
+
+.normas h2 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
 }
 
 .normas ul li {
     list-style: none;
+}
+
+.normas ul li a {
+    color: #001238;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.normas ul li a:hover {
+    text-decoration: underline #001238;
 }
