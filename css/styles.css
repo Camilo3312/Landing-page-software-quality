@@ -205,6 +205,10 @@ header nav ul li a {
     border-left: 5px solid #00123842;
 }
 
+.prueba {
+    position: sticky;
+}
+
 .normas h2 {
     font-size: 3em;
     margin: 0 0 20px 0;
