@@ -4,9 +4,43 @@ $(document).ready(function(){
         var pos = $('.iso').position();
         console.log(pos.top)
 		$('body, html').animate({
-			scrollTop: pos.top - 85
-		}, 300);
+			scrollTop: pos.top 
+		}, 200);
 	});
+	
+	$('.btn_iso').click(function(){
+        var pos = $('.iso').position();
+        console.log(pos.top)
+		$('body, html').animate({
+			scrollTop: pos.top 
+		}, 200);
+	});
+	
+	$('.btn_spice').click(function(){
+        var pos = $('.spice').position();
+        console.log(pos.top)
+		$('body, html').animate({
+			scrollTop: pos.top 
+		}, 200);
+	});
+	
+	$('.btn_cmmi').click(function(){
+        var pos = $('.cmmi').position();
+        console.log(pos.top)
+		$('body, html').animate({
+			scrollTop: pos.top 
+		}, 200);
+	});
+	
+	$('.btn_psp').click(function(){
+        var pos = $('.psp').position();
+        console.log(pos.top)
+		$('body, html').animate({
+			scrollTop: pos.top 
+		}, 200);
+	});
+	
+	
 });
 
 // let btn_normas = document.querySelector('.btn_normas');

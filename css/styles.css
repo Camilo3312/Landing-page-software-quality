@@ -182,11 +182,10 @@ header nav ul li a {
 
 .text_introduccion {
     max-width: 1400px;
-    padding: 0 0 70px 0;
+    padding: 0 0 40px 0;
 }
 
 /* Informacion */
-
 .informacion {
     max-width: 1400px;
     margin: auto;
@@ -202,10 +201,11 @@ header nav ul li a {
 
 .normas {
     padding: 0 0 0 50px;
-    border-left: 5px solid #00123842;
+    border-left: 5px solid #0012381c;
 }
 
 .prueba {
+    top: 80px;
     position: sticky;
 }
 
@@ -226,4 +226,30 @@ header nav ul li a {
 
 .normas ul li a:hover {
     text-decoration: underline #001238;
+}
+
+/* Comentarios */
+
+.comentarios {
+    background: #e2e2e2;
+}
+
+.center_comentarios {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* footer */
+
+footer {
+    background: var(--fondo);
+}
+
+.center_footer {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
 }
