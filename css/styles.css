@@ -31,7 +31,7 @@ header {
     text-decoration: none;
     font-weight: bolder;
     color: #FFF;
-    font-size: 24px;
+    font-size: 35px;
 }
 
 header nav ul {
@@ -232,11 +232,41 @@ header nav ul li a {
 
 .comentarios {
     background: #e2e2e2;
+    padding: 4em 0;
 }
 
 .center_comentarios {
     max-width: 1400px;
     margin: auto;
+}
+
+.form_comentarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.text_box {
+    padding: 20px;
+    font-size: 20px;
+    background: #dbdbdb;
+    color: #001238;
+    border: none;
+    border-radius: 30px;
+    margin: 5px 0;
+}
+
+.text_box:focus {
+    outline: none;
+}
+
+.btn_comentario {
+    padding: 20px;
+    font-size: 20px;
+    background: #001238;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    margin: 5px 0;
 }
 
 /* footer */
@@ -248,8 +278,26 @@ footer {
 .center_footer {
     max-width: 1400px;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     
     display: flex;
     justify-content: space-between;
+}
+
+.nav_footer {
+    display: flex;
+}
+
+.nav_footer ul {
+    margin: 0 3em;
+}
+
+.nav_footer ul li {
+    list-style: none;
+}
+
+.nav_footer ul li a {
+    color: #FFFF;
+    font-size: 1.5em;   
+    text-decoration: none;
 }
