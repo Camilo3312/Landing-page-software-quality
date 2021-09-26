@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     --background: #ffffff;
-    --fondo: #0051ff;
-    --color_subtitulos: #001238;
+    --fondo: #0051ffe0;
+    --color_subtitulos: #00091b;
     --color_parrafos: #2e2e2e; 
 }
 
@@ -54,7 +54,7 @@ header nav ul li a {
 .landing_home {
     background: var(--background);
     height: 100vh;
-    background: #0051ffdc;
+    background: #0051ffa2;
     background-image: url(../images/Background-LP.svg);
     background-size: cover;
 
@@ -165,16 +165,32 @@ header nav ul li a {
 }
 
 /* Subtitulos */
-.subtitulos {
+.titulo {
     color: var(--color_subtitulos);
     font-size: 3em;
-    padding: 5px 0;
+    padding: 30px 0 10px 0;
+}
+
+.subtitulo {
+    color: var(--color_subtitulos);
+    font-size: 1.9em;
+    padding: 0 0 10px 0;
 }
 
 .parrafos {
     color: #272727;
     font-size: 1.5em;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.items {
+    padding: 0 30px;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.items li {
+    margin: 15px 0;
 }
 
 /* Introduccion */
@@ -192,7 +208,7 @@ header nav ul li a {
     color: #FFF;
     font-size: 3em;
     padding: 5px 0;
-    border-bottom: 4px solid #FFF;
+    /* border-bottom: 4px solid #FFF; */
 }
 
 .text_introduccion p {
@@ -201,9 +217,26 @@ header nav ul li a {
     margin: 20px 0;
 }
 
-.text_introduccion {
+.center_text_introduccion {
     max-width: 1400px;
     padding: 0 30px 40px 30px;
+    display: flex;
+}
+
+.text_introduccion {
+    width: 50%;
+    padding: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img_introduccion {
+    width: 50%;
+}
+
+.img_introduccion img {
+    width: 100%;
 }
 
 /* Informacion */
@@ -247,6 +280,7 @@ header nav ul li a {
 
 .normas ul li a:hover {
     text-decoration: underline #001238;
+    cursor: pointer;
 }
 
 /* Comentarios */
@@ -326,6 +360,32 @@ footer {
 }
 
 /* Media queries */
+
+.tabla {
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid #0051ffe0;
+    border-radius: 40px;    
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.tabla thead th,
+tbody th{  
+    padding: 20px;
+    background: #0051ffe0;
+    font-size: 1.3em;
+    color: #FFFF;
+}
+
+.tabla 
+tbody tr td {
+    padding: 20px;
+    background: #0051ff18;
+    text-align: center;
+    font-size: 1.3em;
+
+}
 
 @media screen and (max-width: 1200px){
     /* nav */
