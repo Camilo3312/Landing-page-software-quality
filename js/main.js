@@ -14,12 +14,10 @@ function posInfo(e){
 
 btn_irnormas.addEventListener('click', () => {
 	const posFirstInfo = arrinfo[0];
-	
 	window.scroll({
 		top: posFirstInfo.offsetTop - 85,
 		behavior: 'smooth'
 	});	
-	
 });
 
 arr.forEach(e => {

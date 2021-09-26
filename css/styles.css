@@ -19,7 +19,7 @@ header {
     position: fixed;
     z-index: 1;
     background: #0051ff9d;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     
     display: flex;
     justify-content: space-between;
@@ -54,8 +54,9 @@ header nav ul li a {
 .landing_home {
     background: var(--background);
     height: 100vh;
+    background: #0051ffdc;
     background-image: url(../images/Background-LP.svg);
-    background-size: 100% 110%;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -69,15 +70,19 @@ header nav ul li a {
 
 
 .title p {
-    color: var(--color_parrafos);
+    color: #FFFF;
     margin: 30px 0;
 }
 
 .title h1 {
     font-size: 4em;
     font-weight: 700;
-    color: var(--color_subtitulos);
+    color: #FFFF;
+    line-height: 1.1;
     margin: 15px 0;
+    background: -webkit-linear-gradient(#eee, #FFFF, #a2c0ff, #86adff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title a {
@@ -102,15 +107,31 @@ header nav ul li a {
 .img_header {
     width: 100%;
     height: 100%;
-    animation: move infinite 5s;
+    animation: move infinite 7s;
 }
 
 .img_iso {
+    width: 250px;
+    position: absolute;
+    top: 75%;
+    right: 100px;
+    animation: iso infinite 4s;
+}
+
+.img_spice {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    right: 50px;
+    animation: iso infinite 8s;
+}
+
+.img_cmmi {
     width: 150px;
     position: absolute;
-    top: 70%;
-    right: 100px;
-    animation: iso infinite 3s;
+    top: 10%;
+    right: 500px;
+    animation: iso infinite 10s;
 }
 
 @keyframes iso {
@@ -182,7 +203,7 @@ header nav ul li a {
 
 .text_introduccion {
     max-width: 1400px;
-    padding: 0 0 40px 0;
+    padding: 0 30px 40px 30px;
 }
 
 /* Informacion */
@@ -282,10 +303,12 @@ footer {
     
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav_footer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav_footer ul {
@@ -300,4 +323,26 @@ footer {
     color: #FFFF;
     font-size: 1.5em;   
     text-decoration: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px){
+    /* nav */
+
+    * {
+        font-size: 1em;
+    }
+
+    /* header */
+
+    .img_header {
+        display: none;
+    }
+
+    .informacion {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
