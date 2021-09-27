@@ -13,7 +13,7 @@
     --tamaño_subtitulo: 1.9em;
     --tamaño_normas: 1.7em;
 }
-body {
+body{
     margin: 0;
     padding: 0;
 }
@@ -325,7 +325,7 @@ header nav ul li a {
 
 .container_form {
     width: 50%;
-
+    
 }
 
 .container_comentarios {
@@ -336,7 +336,7 @@ header nav ul li a {
 .text_box {
     padding: 10px 20px;
     font-size: var(--tamaño_parrafos);   
-    background: #dbdbdb;
+    background: #e9e9e9;
     color: #001238;
     border: none;
     border-radius: 30px;
@@ -365,7 +365,7 @@ textarea {
 }
 
 .card_mensaje {
-    background: #e7e7e7;
+    background: #e9e9e9;
     padding: 30px;
     border-radius: 50px;
     margin: 20px 0;
