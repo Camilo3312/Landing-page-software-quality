@@ -66,7 +66,7 @@ header nav ul li a {
 
 }
 
-.landing_home {
+.home {
     background: var(--background);
     height: 100vh;
     background: #0051ffa2;
@@ -200,6 +200,7 @@ header nav ul li a {
     padding: 0 30px;
     margin: 10px 0;
     font-size: var(--tamaño_parrafos);
+    color: var(--color_parrafos);
 }
 
 .items li {
@@ -449,11 +450,7 @@ footer {
     text-decoration: none;
 }
 
-
-.btn_menu {
-    display: none;
-}
-/* Media queries */
+/* Tablas */
 
 .tabla {
     width: 100%;
@@ -484,6 +481,17 @@ tbody tr td {
     border-bottom: 1px solid #e6e6e6;
 }
 
+.btn_menu {
+    font-size: 30px;
+    margin: 20px;
+    color: #FFFF;
+}
+
+.btn {
+    display: none;
+}
+
+/* Media queries */
 
 @media screen and (max-width: 1200px){
     /* nav */
@@ -542,11 +550,20 @@ tbody tr td {
         flex-direction: column-reverse;
     }
 
+    .cuadro {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .tabla thead th,
+    .tabla tbody tr td,
+    .tabla tbody tr th {
+        font-size: 13px;
+    }
     .img_introduccion {
         display: none;
     }
 
-       .text_introduccion {
+    .text_introduccion {
         width: 100%;
     }
 
@@ -582,24 +599,19 @@ tbody tr td {
 @media screen and (max-width: 533px){
     /* nav normas */
 
-
     * {
         --tamaño_parrafos: 1.5em;
         --tamaño_titulo: 2.5em;
         --tamaño_subtitulo: 2em;       
     }
 
-    .btn_menu {
-        font-size: 30px;
-        margin: 20px;
-        color: #FFFF;
-        display: block;
-    }
-
     .logo {
         font-size: 40px;
     }
-
+    .btn {
+        display: block;
+    }
+    
     .menu ul {
         flex-direction: column;
         align-items: flex-end;
@@ -610,9 +622,21 @@ tbody tr td {
         top: 91px;
         width: 100vw;
         height: 100vh;
-        background: #0051ff9d;
+        background: #0051ffdc;
         right: -100vw;
-        transition: ease 500ms;
+        transition: ease 200ms;
+    }
+
+    .menu ul li a {
+        font-size: 30px;
+    }
+
+    .img_iso {
+        display: none;
+    }
+    
+    .img_cmmi {
+        display: none;
     }
 
     .title h1 {
@@ -626,10 +650,6 @@ tbody tr td {
     
     .btn_irnormas {
         font-size: 1.6em;
-    }
-
-    .none {
-        display: none;
     }
 
     .img_header {

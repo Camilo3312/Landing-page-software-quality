@@ -12,8 +12,9 @@
 
     <header>    
         <a href="" class="logo">Logo</a>
-        <i class="fas fa-bars btn_menu"></i>
-
+        <div class="btn">
+            <i class="fas fa-bars btn_menu" ></i>
+        </div>
         <nav class="menu">
             <ul>
                 <li><a href="">Home</a></li>
@@ -27,7 +28,7 @@
     <!-- Contenido principal -->
     <main>
         <!-- Landing page -->
-        <section class="landing_home">
+        <section class="home">
             
             <div class="title">
                 <h1>Normas y Estandares de calidad </h1>
@@ -105,48 +106,50 @@
                         productividad, integridad, y satisfacción.
                     </p>
 
-                    <table class="tabla none">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <p class="border_buttom">Parte beneficiaria</p>                                  
-                                    <p>Características</p>
-                                </th>
-                                <th>Usuario final</th>
-                                <th>Organizacion</th>
-                                <th>Soporte tecnico</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Efectividad</th>
-                                <td>Efectividad del usuario</td>
-                                <td>Efectividad de las tareas</td>
-                                <td>Efectividad del mantenimiento</td>
-                            </tr>
+                    <section class="cuadro">                   
+                        <table class="tabla none">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p class="border_buttom">Parte beneficiaria</p>                                  
+                                        <p>Características</p>
+                                    </th>
+                                    <th>Usuario final</th>
+                                    <th>Organizacion</th>
+                                    <th>Soporte tecnico</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Efectividad</th>
+                                    <td>Efectividad del usuario</td>
+                                    <td>Efectividad de las tareas</td>
+                                    <td>Efectividad del mantenimiento</td>
+                                </tr>
 
-                            <tr>
-                                <th>Recursos</th>
-                                <td>Productividad del usuario (tiempo)</td>
-                                <td>Coste - Eficiencia (dinero)</td>
-                                <td>Coste del mantenimiento</td>
-                            </tr>
-                            <tr>
-                                <th>Consecuencias adversas</th>
-                                <td>Riesgos para el usuario (salud y seguridad)</td>
-                                <td>Riesgo comercial</td>
-                                <td>Corrupcion o fallos del software</td>
-                            </tr>
+                                <tr>
+                                    <th>Recursos</th>
+                                    <td>Productividad del usuario (tiempo)</td>
+                                    <td>Coste - Eficiencia (dinero)</td>
+                                    <td>Coste del mantenimiento</td>
+                                </tr>
+                                <tr>
+                                    <th>Consecuencias adversas</th>
+                                    <td>Riesgos para el usuario (salud y seguridad)</td>
+                                    <td>Riesgo comercial</td>
+                                    <td>Corrupcion o fallos del software</td>
+                                </tr>
 
-                            <tr>
-                                <th>Satispacción</th>
-                                <td>Satisfacción del usuario</td>
-                                <td>Satisfaccion en la gestion</td>
-                                <td>Satisfaccion del mantenimiento</td>
-                            </tr>
+                                <tr>
+                                    <th>Satispacción</th>
+                                    <td>Satisfacción del usuario</td>
+                                    <td>Satisfaccion en la gestion</td>
+                                    <td>Satisfaccion del mantenimiento</td>
+                                </tr>
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </section>
 
                     <h2 class="subtitulo">Norma ISO/IEC 14598</h2>
 
@@ -335,101 +338,104 @@
                     </p>
                 </section>    
                 
-                <section class="cuadro info">
+                <section class="info">
                     <h1 class="titulo">Cuadro comparativo</h1>
-                    <table class="tabla none">
-                        <thead>
-                            <tr>
-                                <th>Estándares y Normas</th>                                                          
-                                <th>Organismo que regula</th>
-                                <th>Aplicable a</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>CMMI</td>
-                                <td>(SEI) Software Engineering Institute</td>
-                                <td>
-                                    Mejora de procesos de construcción de software
-                                    y proyectos de TI.
-                                </td>
-                            </tr>
+                    
+                    <div class="cuadro">
+                        <table class="tabla none">
+                            <thead>
+                                <tr>
+                                    <th>Estándares y Normas</th>                                                          
+                                    <th>Organismo que regula</th>
+                                    <th>Aplicable a</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CMMI</td>
+                                    <td>(SEI) Software Engineering Institute</td>
+                                    <td>
+                                        Mejora de procesos de construcción de software
+                                        y proyectos de TI.
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>PSP</td>
-                                <td>ISO</td>
-                                <td>
-                                    Permite estimar cuánto se tarda un individuo en
-                                    realizar una aplicación de software
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>PSP</td>
+                                    <td>ISO</td>
+                                    <td>
+                                        Permite estimar cuánto se tarda un individuo en
+                                        realizar una aplicación de software
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>PSP-TSP</td>
-                                <td>ISO</td>
-                                <td>
-                                    Predice el tiempo y tamaño del software
-                                    Administración de calidad
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>PSP-TSP</td>
+                                    <td>ISO</td>
+                                    <td>
+                                        Predice el tiempo y tamaño del software
+                                        Administración de calidad
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>ISO 25000</td>
-                                <td>ISO</td>
-                                <td>
-                                    Establecen un modelo de calidad para el
-                                    producto del software, además de definir la
-                                    evaluación de la calidad del producto.
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>ISO 25000</td>
+                                    <td>ISO</td>
+                                    <td>
+                                        Establecen un modelo de calidad para el
+                                        producto del software, además de definir la
+                                        evaluación de la calidad del producto.
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>IEEE</td>
-                                <td>IEEE</td>
-                                <td>
-                                    Serie de documentación para el desarrollo de
-                                    software y proyectos de TI
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>IEEE</td>
+                                    <td>IEEE</td>
+                                    <td>
+                                        Serie de documentación para el desarrollo de
+                                        software y proyectos de TI
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>TSP </td>
-                                <td>Team Software Process
-                                </td>
-                                <td>
-                                    Es un método de establecimiento y mejora del
-                                    trabajo en equipo para procesos de software
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>TSP </td>
+                                    <td>Team Software Process
+                                    </td>
+                                    <td>
+                                        Es un método de establecimiento y mejora del
+                                        trabajo en equipo para procesos de software
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>SPICE </td>
-                                <td>Programa de simulación con énfasis
-                                    en circuitos integrados
-                                    
-                                </td>
-                                <td>
-                                    Es una importante iniciativa internacional para
-                                    apoyar el desarrollo de una Norma Internacional
-                                    para la Evaluación de procesos del software
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>SPICE </td>
+                                    <td>Programa de simulación con énfasis
+                                        en circuitos integrados
+                                        
+                                    </td>
+                                    <td>
+                                        Es una importante iniciativa internacional para
+                                        apoyar el desarrollo de una Norma Internacional
+                                        para la Evaluación de procesos del software
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>MOPROSOFT </td>
-                                <td>ISO
-                                </td>
-                                <td>
-                                    Norma mexicana, basada en procesos para las
-                                    industrias de software, la cual sirve para
-                                    estandarizar operaciones y prácticas en gestión
-                                    de ingeniería de software
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>MOPROSOFT </td>
+                                    <td>ISO
+                                    </td>
+                                    <td>
+                                        Norma mexicana, basada en procesos para las
+                                        industrias de software, la cual sirve para
+                                        estandarizar operaciones y prácticas en gestión
+                                        de ingeniería de software
+                                    </td>
+                                </tr>
 
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </section> 
                            
                 <section class="concluciones info">
@@ -441,8 +447,7 @@
                         de calidad, el cual debe satisfacer las necesidades del cliente o de la empresa a la que se le esté desarrollando dicho software.
                     </p>
                 </section> 
-                          
-                
+                                         
             </div>
 
             <nav class="normas">
