@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     --background: #ffffff;
-    --fondo: rgba(0, 81, 255, 0.878);
+    --fondo: #0051ff;
     --color_subtitulos: #00091b;
     --color_parrafos: #2e2e2e; 
 
@@ -68,7 +68,7 @@ header nav ul li a {
 .home {
     background: var(--background);
     height: 100vh;
-    background: #0051ffa2;
+    background: #0051ffe1;
     background-image: url(../images/Background-LP.svg);
     background-size: cover;
 
