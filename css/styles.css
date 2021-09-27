@@ -597,9 +597,9 @@ tbody tr td {
     /* nav normas */
 
     * {
-        --tamaño_parrafos: 1.5em;
-        --tamaño_titulo: 2.5em;
-        --tamaño_subtitulo: 2em;       
+        --tamaño_parrafos: 1.3em;
+        --tamaño_titulo: 2.3em;
+        --tamaño_subtitulo: 1.8em;       
     }
 
     .logo {
