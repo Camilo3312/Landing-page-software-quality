@@ -20,16 +20,16 @@
             </ul>
         </nav>
     </header>
-
+  
     <!-- Contenido principal -->
     <main>
         <!-- Landing page -->
         <section class="landing_home">
             
             <div class="title">
-                <h1>Normas de calidad para el desarrollo de software</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam delectus autem quas temporibus animi excepturi aliquam esse. Repellat, nam.
-                </p>
+                <h1>Normas y Estandares de calidad </h1>
+                <h2>para el desarrollo de software</h2>
+                
                 <a class="btn_irnormas">Ver normas</a>
             </div>
             <div class="img">
@@ -64,7 +64,6 @@
 
             <div class="info_normas ">
             
-
                 <section class="iso info">
                     <h1 class="titulo">NORMAS ISO/IEC</h1>
 
@@ -103,12 +102,11 @@
                         productividad, integridad, y satisfacción.
                     </p>
 
-                    <table class="tabla">
+                    <table class="tabla none">
                         <thead>
                             <tr>
                                 <th>
-                                    <p>Parte beneficiaria</p>
-                                    <hr>
+                                    <p class="border_buttom">Parte beneficiaria</p>                                  
                                     <p>Características</p>
                                 </th>
                                 <th>Usuario final</th>
@@ -446,7 +444,7 @@
 
             <nav class="normas">
 		        <div class="prueba">
-                    <h2>Normas</h2>
+                    <h2 class="titulo">Normas</h2>
                     <ul>
                         <li><a class="btn_normas btn_iso" >Normas ISO/IEC</a></li>
                         <li><a class="btn_normas btn_spice" >SPICE</a></li>
@@ -467,61 +465,93 @@
         <section class="comentarios">
         
             <div class="center_comentarios">
-                <h1 class="subtitulos">Comentarios</h1>
-                
-                <form class="form_comentarios" action="">
-                    <input class="text_box" type="text" name="name" placeholder="Ingresa tu nombre" >
-                    <textarea class="text_box" name="" id="" cols="30" rows="10" placeholder="Ingresa un comentario"></textarea>
-                    <input class="btn_comentario" type="submit" value="Comentar">
-                </form>
-                
-                <div class="container_comentarios">
+
+                <div class="container_form">
+                    <h1 class="subtitulo">Dejanos un comentario</h1>
                     
+                    <form class="form_comentarios" action="#">
+                        <input class="text_box name" type="text" name="name" placeholder="Ingresa tu nombre" >
+                        <textarea class="text_box textarea" placeholder="Ingresa un comentario"></textarea>
+                        <input class="btn_comentario" type="submit" value="Comentar">
+                    </form> 
                 </div>
+
+                <div class="container_comentarios">
+
+                    <div class="card_mensaje">
+                        <p class="nombre">Fabio</p>
+                        <p class="fecha">27/9/2021 08:48</p>
+
+                        <p class="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam voluptas optio praesentium porro odit sint corrupti ducimus? Dolorum, necessitatibus?</p>
+                        <a class="btn_responder" href="">Responder</a>
+                    </div>
+                    <div class="card_mensaje">
+                        <p class="nombre">Luis</p>
+                        <p class="fecha">27/9/2021 08:48</p>
+
+                        <p class="mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam voluptas optio praesentium porro odit sint corrupti ducimus? Dolorum, necessitatibus?</p>
+                        <a class="btn_responder" href="">Responder</a>
+                    </div>
+                    <div class="card_mensaje">
+                        <p class="nombre">Alverto</p>
+                        <p class="fecha">27/9/2021 08:48</p>
+                        <p class="mensaje">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eos asperiores atque illo, ipsa ducimus nisi deleniti aliquam voluptas unde minima voluptatibus voluptate sit excepturi! Quia numquam hic excepturi in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam voluptas optio praesentium porro odit sint corrupti ducimus? Dolorum, necessitatibus?</p>
+                        <a class="btn_responder" href="">Responder</a>
+                    </div>
+
+                </div>
+
             </div>
+ 
         </section>
     
         <!-- Pie de pagina -->
         <footer>
             <div class="center_footer">
-                <div>
-                    <a class="logo" href="">Logo</a>
+
+                <div class="info_footer" >
+                    <div>
+                        <a class="logo" href="">Logo</a>
+                    </div>
+
+                    <nav class="nav_footer">
+                        <ul>
+                            <li><a href="">About</a>  </li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">More</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>   
+                        
+                        <ul>
+                            <li><a href="">About</a>  </li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">More</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <li><a href="">About</a>  </li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">More</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>   
+                        
+                        <ul>
+                            <li><a href="">About</a>  </li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">More</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>       
+                        
+                        
+                    </nav>
                 </div>
-                <nav class="nav_footer">
-                    <ul>
-                        <li><a href="">About</a>  </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">More</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>   
-                    
-                    <ul>
-                        <li><a href="">About</a>  </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">More</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>
-                    
-                    <ul>
-                        <li><a href="">About</a>  </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">More</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>   
-                    
-                    <ul>
-                        <li><a href="">About</a>  </li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">More</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>       
-                    
-                    
-                </nav>
-         
-                </nav>
-                
-                
+
+                <div class="copy">
+                    <p>Desarrollado por Crstian Velasquez</p>
+                    <p>&copy; 2021 Todos los derechos reservados</p>
+                </div>    
+
             </div>
         </footer>
         
