@@ -569,7 +569,7 @@ tbody tr td {
     /* nav normas */
 
     * {
-        --tamaño_parrafos: 2em;
+        --tamaño_parrafos: 1.6em;
         --tamaño_titulo: 3em;
         --tamaño_subtitulo: 2em;       
     }
