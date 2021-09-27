@@ -4,22 +4,19 @@ let btn_irnormas = document.querySelector('.btn_irnormas');
 let nombre = document.querySelector('.name');
 let message = document.querySelector('.message');
 let btn_comment = document.querySelector('.btn_comentario');
+let btn_menu = document.querySelector('.btn_menu');
+let menu = document.querySelector('.menu');
+
 
 var messagesJson = JSON.stringify();
 const arr = Array.from(elemets);
 const arrinfo = Array.from(info);
 
-// Messages
-
-btn_comment.addEventListener('click', () => {
-	let date = new Date();
-	localStorage.setItem("Nombre",nombre.value);
-	localStorage.setItem('Fecha', date);
-	localStorage.setItem("Nombre",menssage.value);
-
-	let peticion = localStorage.getItem("Nombre");
-	console.log(peticion)
-});
+// Menu
+btn_menu.addEventListener('click', () =>{
+	menu.classList.toggle('menu_visible');
+	console.log('asa')
+}); 
 
 // Nav normas
 

@@ -471,6 +471,11 @@ tbody tr td {
     border-bottom: 1px solid #e6e6e6;
 }
 
+.btn_menu {
+    display: none;
+}
+
+
 @media screen and (max-width: 1200px){
     /* nav */
 
@@ -568,10 +573,26 @@ tbody tr td {
 @media screen and (max-width: 533px){
     /* nav normas */
 
+
     * {
         --tamaño_parrafos: 1.6em;
         --tamaño_titulo: 3em;
         --tamaño_subtitulo: 2em;       
+    }
+
+    
+
+
+    .btn_menu {
+        font-size: 30px;
+        margin: 20px;
+        color: #FFFF;
+        display: block;
+    }
+
+
+    .logo {
+        font-size: 40px;
     }
 
     .menu ul {
@@ -581,11 +602,12 @@ tbody tr td {
 
     .menu {
         position: absolute;
-        top: 0;
+        top: 90px;
         width: 100vw;
         height: 100vh;
         background: var(--fondo);
         right: -100vw;
+        transition: ease 500ms;
     }
 
     .title h1 {
@@ -594,7 +616,7 @@ tbody tr td {
     }
 
     .title h2 {
-        font-size: 3em;      
+        font-size: 2.7em;      
     }
     
     .btn_irnormas {
@@ -610,5 +632,9 @@ tbody tr td {
 
     .img_cmmi {
         right: 1px;
+    }
+
+    .menu_visible {
+        right: 0;
     }
 }
