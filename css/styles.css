@@ -32,6 +32,7 @@ header {
 
 .logo {
     margin: 0; 
+    padding: 20px;
     text-decoration: none;
     font-weight: bolder;
     color: #FFF;
@@ -420,10 +421,6 @@ footer {
     font-size: 1.1em; 
 }
 
-.none {
-    display: none;
-}
-
 .nav_footer {
     display: flex;
     flex-wrap: wrap;
@@ -568,8 +565,44 @@ tbody tr td {
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 533px){
     /* nav normas */
+
+    * {
+        --tamaño_parrafos: 2em;
+        --tamaño_titulo: 3em;
+        --tamaño_subtitulo: 2em;       
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--fondo);
+        right: -100vw;
+    }
+
+    .title h1 {
+        font-size: 3.5em;
+    }
+
+    .title h2 {
+        font-size: 3em;      
+    }
+    
+    .btn_irnormas {
+        font-size: 2em;
+    }
+
+    .none {
+        display: none;
+    }
     .img_header {
         display: none;
     }
