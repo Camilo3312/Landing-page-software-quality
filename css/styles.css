@@ -590,6 +590,7 @@ tbody tr td {
 
     .title h1 {
         font-size: 3.5em;
+        line-height: 1;
     }
 
     .title h2 {
