@@ -22,7 +22,7 @@ header {
     width: 100vw;
     position: fixed;
     z-index: 1;
-    background: #0051ff9d;
+    background: #0051ffdc;
     backdrop-filter: blur(10px);
     
     display: flex;
